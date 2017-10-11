@@ -2,7 +2,7 @@ import React from 'react'
 
 
 const imgStyle = {
-  height: '100vh',
+  height: '140vh',
   width: '100vw'
 }
 
