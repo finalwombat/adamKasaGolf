@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Background from './Background'
-import Golfer from './img/golfer.webp'
+import Golfer from './img/golfshot.jpg'
 import './App.css'
 
 class App extends Component {
