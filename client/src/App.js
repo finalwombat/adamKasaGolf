@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Background from './Background'
+import Background from './components/Background'
 import Golfer from './img/golfshot.jpg'
 import './App.css'
 
