@@ -7,9 +7,9 @@ import About from './About'
 const Routes = (props) => {
   return (
     <div className='main'>
-      <Route path="/" component={Home}/>
-      <Route path="/schedule" component={Schedule}/>
-      <Route path="/about" component={About}/>
+      <Route exact path="/" render={Home} />
+      <Route path="/schedule" component={Schedule} />
+      <Route path="/about" component={About} />
     </div>
   )
 }
