@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Background from './Background'
-import backgroundImage from './img/481.jpg'
+import Background from '../components/Background'
+import backgroundImage from '../img/481.jpg'
 
 const Schedule = () => {
     return (

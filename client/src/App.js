@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import Background from './components/Background'
-import Menu from './Menu.js'
+import Menu from './components/Menu.js'
 import Routes from './Routes'
 import './App.css'
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
-import Home from './Home'
-import Schedule from './Schedule'
-import About from './About'
+import Home from './pages/Home'
+import Schedule from './pages/Schedule'
+import About from './pages/About'
 
 const Routes = (props) => {
   return (

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Background from './Background'
-import backgroundImage from './img/clubs.jpg'
+import Background from '../components/Background'
+import backgroundImage from '../img/clubs.jpg'
 
 const About = () => {
     return (
