@@ -1,23 +1,22 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
-import Background from './components/Background'
 import Menu from './components/Menu.js'
-import Routes from './Routes'
+import { Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+import Schedule from './pages/Schedule'
+import About from './pages/About'
+import PageShell from './components/PageShell'
 import './App.css'
 
 class App extends Component {
   render() {
     return (
-        <Router>
-          <div className="app">
-            <Menu />
-            <ReactCSSTransitionGroup transitionName="anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false}>
-              <Routes />
-            </ReactCSSTransitionGroup>
-          </div>
-        </Router>
-
+        <div className="app">
+          <Menu />
+          <Route path="/" exact component={PageShell(Home)}></Route>
+          <Route path="/schedule" exact component={PageShell(Schedule)}></Route>
+          <Route path="/about" exact component={PageShell(About)}></Route>
+        </div>
     );
   }
 }
