@@ -1,5 +1,4 @@
 import React from 'react'
-import FacebookProvider, { Feed } from 'react-facebook'
 
 const script = function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
