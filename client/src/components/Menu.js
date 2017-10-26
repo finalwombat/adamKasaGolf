@@ -8,9 +8,9 @@ const menuStyle = {
 }
 
 const logoStyle = {
-  "margin-top": "auto",
-  "margin-bottom": "auto",
-  "margin-left": "2vw"
+  "marginTop": "auto",
+  "marginBottom": "auto",
+  "marginLeft": "2vw"
 }
 const logoImgStyle = {
   width: "20vw"
