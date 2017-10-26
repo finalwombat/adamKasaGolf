@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Background from '../components/Background'
 import backgroundImage from '../img/481.jpg'
 
