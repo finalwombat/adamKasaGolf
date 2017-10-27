@@ -1,0 +1,28 @@
+.banner {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  background: rgba(183, 183, 183, 1);
+}
+.banner:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+.banner:before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
