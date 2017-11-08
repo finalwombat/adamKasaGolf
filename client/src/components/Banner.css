@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 40px;
+  width: 250px;
+  height: 30px;
   position: relative;
   background: rgba(183, 183, 183, 1);
 }
@@ -14,9 +14,9 @@
   bottom: 0;
   width: 0;
   height: 0;
-  border-left: 20px solid white;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
+  border-left: 15px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
 }
 .banner:before {
   content: "";
@@ -25,9 +25,9 @@
   bottom: 0;
   width: 0;
   height: 0;
-  border-right: 20px solid white;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
+  border-right: 15px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
 }
 .banner h1 {
   align-self: center;
