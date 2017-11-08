@@ -1,4 +1,7 @@
 .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 40px;
   position: relative;
@@ -25,4 +28,7 @@
   border-right: 20px solid white;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
+}
+.banner h1 {
+  align-self: center;
 }
