@@ -7,7 +7,7 @@ import Banner from './Banner'
 const Social = () => {
   return (
       <div className="social">
-        <Banner />
+        <Banner text="Follow Adam"/>
         <img src={facebookImg} alt="facebook" />
         <img src={instagramImg} alt="instagram" />
         <img src={twitterImg} alt="twitter" />
