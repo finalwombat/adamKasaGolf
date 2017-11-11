@@ -20,7 +20,8 @@ const Menu = (props) => {
     return (
       <div className="menu" style={menuStyle}>
         <div className="logo" style={logoStyle}>
-          <img src={logo} style={logoImgStyle} alt="logo"/>
+          <img src={logo} style={logoImgStyle} alt="logo"
+          onClick={() => {props.history.push('/')}} />
         </div>
         <nav className="slidemenu">
           <input type="radio" name="slideItem" id="slide-item-1" className="slide-toggle"
