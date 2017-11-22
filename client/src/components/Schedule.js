@@ -17,7 +17,7 @@ const Schedule = (props) => {
 
 const ScheduleEvent = (props) => {
   return (
-
+    <div></div>
   )
 }
 
