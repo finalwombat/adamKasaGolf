@@ -30,7 +30,7 @@
     "setupFiles": [
       "./src/tests/jestsetup.js"
     ],
-    "snapshotDerializers": [
+    "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
   }
