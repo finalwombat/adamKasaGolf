@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Schedule = (props) => {
+export const Schedule = (props) => {
   return (
     <div className='scheduel'>
       <div className='titles'>
@@ -15,10 +15,8 @@ const Schedule = (props) => {
   )
 }
 
-const ScheduleEvent = (props) => {
+export const ScheduleEvent = (props) => {
   return (
     <div></div>
   )
 }
-
-export default Schedule
