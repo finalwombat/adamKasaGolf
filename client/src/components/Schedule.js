@@ -1,6 +1,10 @@
 import React from 'react'
 
 export const Schedule = (props) => {
+
+  const events = props.events.map(event => {
+    return <li><ScheduleEvent date={event.date} name={event.name} result={event.result} /></li>
+  })
   return (
     <div className='scheduel'>
       <div className='titles'>
@@ -9,6 +13,9 @@ export const Schedule = (props) => {
         <h2>Result</h2>
       </div>
       <div className='events'>
+        <ul>
+        {events}
+        </ul>
       </div>
     </div>
 
