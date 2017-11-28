@@ -21,6 +21,5 @@ it('returns div with event details', () => {
   const div = shallow(<ScheduleEvent />)
   console.log(div)
 
-  
 
 })
