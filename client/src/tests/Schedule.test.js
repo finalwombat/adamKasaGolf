@@ -12,14 +12,10 @@ it('renders correctly', () => {
 
 // ScheduleEvent
 it('returns div with event details', () => {
-  const e = {
-    'date': '12th sep',
-    'event': 'Gold Coast open',
-    'Result': ''
-  }
 
-  const div = shallow(<ScheduleEvent />)
-  console.log(div)
+  const wrapper = shallow(<ScheduleEvent date='12th sep' name='Gold Coast Open' result=''/>)
+  console.log(wrapper.html())
+  expect(wrapper.html()).toEqual('<div><p>12th sep</p><p>Gold Coast Open</p><p></p></div>')
 
 
 })
