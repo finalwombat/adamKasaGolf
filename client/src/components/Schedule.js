@@ -17,6 +17,10 @@ export const Schedule = (props) => {
 
 export const ScheduleEvent = (props) => {
   return (
-    <div></div>
+    <div>
+      <p>{props.date}</p>
+      <p>{props.name}</p>
+      <p>{props.result}</p>
+    </div>
   )
 }
