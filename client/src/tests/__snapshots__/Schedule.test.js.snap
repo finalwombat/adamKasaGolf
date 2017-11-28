@@ -19,6 +19,48 @@ exports[`renders correctly 1`] = `
   </div>
   <div
     className="events"
-  />
+  >
+    <ul>
+      <li>
+        <div>
+          <p>
+            12th sep
+          </p>
+          <p>
+            Gold Coast Open
+          </p>
+          <p>
+            5th
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p>
+            16th oct
+          </p>
+          <p>
+            Masters
+          </p>
+          <p>
+            1st
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p>
+            20th dec
+          </p>
+          <p>
+            Christmass challenge
+          </p>
+          <p>
+            25th
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
 `;
