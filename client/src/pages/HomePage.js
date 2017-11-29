@@ -4,7 +4,7 @@ import backgroundImage from '../img/golfshot.jpg'
 import FacebookFeed from '../components/FacebookFeed'
 import Social from '../components/Social'
 
-const Home = () => {
+const HomePage = () => {
     return (
       <div className="home">
         <Background img={backgroundImage}></Background>
@@ -14,4 +14,4 @@ const Home = () => {
     );
   }
 
-export default Home
+export default HomePage

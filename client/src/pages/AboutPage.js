@@ -1,13 +1,13 @@
 import React from 'react'
 import Background from '../components/Background'
-import backgroundImage from '../img/481.jpg'
+import backgroundImage from '../img/clubs.jpg'
 
-const Schedule = () => {
+const AboutPage = () => {
     return (
-      <div className="schedule">
+      <div className="about">
         <Background img={backgroundImage}></Background>
       </div>
     );
   }
 
-export default Schedule
+export default AboutPage
