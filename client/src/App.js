@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import Menu from './components/Menu.js'
 import { Route } from 'react-router-dom'
 
-import Home from './pages/Home'
-import Schedule from './pages/Schedule'
-import About from './pages/About'
+import HomePage from './pages/HomePage'
+import SchedulePage from './pages/SchedulePage'
+import AboutPage from './pages/AboutPage'
 import PageShell from './components/PageShell'
 import './App.css'
 
@@ -13,9 +13,9 @@ class App extends Component {
     return (
         <div className="app">
           <Menu />
-          <Route path="/" exact component={PageShell(Home)}></Route>
-          <Route path="/schedule" exact component={PageShell(Schedule)}></Route>
-          <Route path="/about" exact component={PageShell(About)}></Route>
+          <Route path="/" exact component={PageShell(HomePage)}></Route>
+          <Route path="/schedule" exact component={PageShell(SchedulePage)}></Route>
+          <Route path="/about" exact component={PageShell(AboutPage)}></Route>
         </div>
     );
   }
