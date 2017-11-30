@@ -3,7 +3,9 @@ import React from 'react'
 const scheduleStyle = {
   display: 'flex',
   flexDirection: 'column',
-  width: '50vw'
+  width: '80vw',
+  marginLeft: 'auto',
+  marginRight: 'auto'
 }
 
 const titlesStyle = {
@@ -21,6 +23,10 @@ const scheduleEventStyle = {
   justifyContent: 'space-between'
 }
 
+const ulStyle = {
+  listStyle: 'none'
+}
+
 
 export const Schedule = (props) => {
   const events = props.events.map(event => {
@@ -34,7 +40,7 @@ export const Schedule = (props) => {
         <h2>Result</h2>
       </div>
       <div className='events' style={eventsStyle}>
-        <ul>
+        <ul style={ulStyle}>
         {events}
         </ul>
       </div>
