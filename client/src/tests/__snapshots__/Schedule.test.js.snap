@@ -3,9 +3,24 @@
 exports[`renders correctly 1`] = `
 <div
   className="scheduel"
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "width": "80vw",
+    }
+  }
 >
   <div
     className="titles"
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "space-between",
+      }
+    }
   >
     <h2>
       Date
@@ -19,10 +34,30 @@ exports[`renders correctly 1`] = `
   </div>
   <div
     className="events"
+    style={
+      Object {
+        "border": "1px solid red",
+        "display": "flex",
+      }
+    }
   >
-    <ul>
+    <ul
+      style={
+        Object {
+          "listStyle": "none",
+        }
+      }
+    >
       <li>
-        <div>
+        <div
+          className="scheduleEvent"
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "space-between",
+            }
+          }
+        >
           <p>
             12th sep
           </p>
@@ -35,7 +70,15 @@ exports[`renders correctly 1`] = `
         </div>
       </li>
       <li>
-        <div>
+        <div
+          className="scheduleEvent"
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "space-between",
+            }
+          }
+        >
           <p>
             16th oct
           </p>
@@ -48,7 +91,15 @@ exports[`renders correctly 1`] = `
         </div>
       </li>
       <li>
-        <div>
+        <div
+          className="scheduleEvent"
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "space-between",
+            }
+          }
+        >
           <p>
             20th dec
           </p>
