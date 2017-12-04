@@ -10,7 +10,9 @@ const scheduleStyle = {
 
 const titlesStyle = {
   display: 'flex',
-  justifyContent: 'space-between'
+  justifyContent: 'space-between',
+  color: '#F9D41B',
+  fontSize: '28px'
 }
 
 const eventsStyle = {
@@ -20,7 +22,8 @@ const eventsStyle = {
 
 const scheduleEventStyle = {
   display: 'flex',
-  justifyContent: 'space-between'
+  justifyContent: 'space-between',
+  fontSize: '24'
 }
 
 const ulStyle = {
