@@ -5,7 +5,8 @@ const scheduleStyle = {
   flexDirection: 'column',
   width: '80vw',
   marginLeft: 'auto',
-  marginRight: 'auto'
+  marginRight: 'auto',
+  position: 'relative'
 }
 
 const titlesStyle = {

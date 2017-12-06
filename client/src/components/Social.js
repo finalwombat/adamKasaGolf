@@ -6,7 +6,8 @@ import Banner from './Banner'
 
 const socialimagesStyle = {
   display: 'flex',
-  justifyContent: 'space-between'
+  justifyContent: 'space-between',
+  position: 'relative'
 }
 
 const Social = () => {
