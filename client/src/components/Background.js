@@ -3,7 +3,8 @@ import React from 'react'
 
 const imgStyle = {
   height: '140vh',
-  width: '100vw'
+  width: '100vw',
+  position: 'absolute'
 }
 
 const Background = (props) => {
