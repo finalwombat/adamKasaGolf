@@ -4,30 +4,31 @@
   justify-content: center;
   width: 250px;
   height: 30px;
+  left: 50px;
   position: relative;
   background: rgba(183, 183, 183, 1);
 }
 .banner:after {
   content: "";
   position: absolute;
-  left: 0;
+  left: -15px;
   bottom: 0;
   width: 0;
   height: 0;
-  border-left: 15px solid white;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-top: 15px solid rgba(183, 183, 183, 1);
+  border-bottom: 15px solid rgba(183, 183, 183, 1);
 }
 .banner:before {
   content: "";
   position: absolute;
-  right: 0px;
+  right: -15px;
   bottom: 0;
   width: 0;
   height: 0;
-  border-right: 15px solid white;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid rgba(183, 183, 183, 1);
+  border-bottom: 15px solid rgba(183, 183, 183, 1);
 }
 .banner h1 {
   align-self: center;
