@@ -4,12 +4,22 @@ import backgroundImage from '../img/golfshot.jpg'
 import FacebookFeed from '../components/FacebookFeed'
 import Social from '../components/Social'
 
+const homeStyle = {
+}
+
+const contentStyle = {
+  display: 'flex',
+  justifyContent: 'space-around'
+}
+
 const HomePage = () => {
     return (
-      <div className="home">
+      <div className="home" style={homeStyle}>
         <Background img={backgroundImage}></Background>
-        <FacebookFeed />
-        <Social />
+        <div className='content' style={contentStyle}>
+          <FacebookFeed />
+          <Social />
+        </div>
       </div>
     );
   }
