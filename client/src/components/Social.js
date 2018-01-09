@@ -6,7 +6,10 @@ import Banner from './Banner'
 
 
 const socialStyle = {
-  
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-around',
+  allignItems: 'center'
 }
 
 const topTextStyle = {
@@ -28,7 +31,7 @@ const socialimagesStyle = {
 
 const Social = () => {
   return (
-      <div className="social">
+      <div className="social" style={socialStyle}>
         <div className="topText" style={topTextStyle}>
           <h2>Living the dream </h2>
           <h2>with a full-time golfer</h2>
