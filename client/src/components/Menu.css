@@ -1,90 +1,96 @@
-*{
-  margin: 0;
-  padding: 0;
+.ns-TabsModule {
+  width: 100%;
+  text-align: center;
 }
 
-.clear{
-  clear: both;
+.ns-TabNav {
+  position: relative;
+  font-size: 0;
+  border-bottom: 1px solid #555;
 }
 
+.ns-TabNav .ns-TabNav_Link {
+    display: inline-block;
+    margin: 0 11px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: calc(11px * 4);
+    color: #fff;
+    text-transform: uppercase;
+  }
 
-.slide-toggle{
+.ns-TabNav .ns-TabNav_Link span {
+      font-size: inherit;
+      line-height: inherit;
+      letter-spacing: 1px;
+    }
+
+.ns-TabNav .ns-TabNav_Indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: indianred;
+    -webkit-transition-property: left, background-color, -webkit-transform;
+    transition-property: left, background-color, -webkit-transform;
+    transition-property: transform, left, background-color;
+    transition-property: transform, left, background-color, -webkit-transform;
+    -webkit-transition-duration: .2s;
+            transition-duration: .2s;
+    -webkit-transform-origin: 0;
+            transform-origin: 0;
+    -webkit-transform: translate3d(0, 0, 0) scaleX(0);
+            transform: translate3d(0, 0, 0) scaleX(0);
+    opacity: 0;
+    -webkit-animation: fadeMeIn .2s forwards;
+            animation: fadeMeIn .2s forwards;
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+  }
+
+.ns-TabPanel {
+  padding: 40px;
+  font-size: 11px;
+  color: #545454;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   display: none;
 }
 
-.slidemenu{
-  font-family: arial, sans-serif;
-  width: 600px;
-  margin: 50px auto;
-  overflow: hidden;
+@-webkit-keyframes fadeMeIn {
+  to {
+    opacity: 1;
+  }
 }
 
-.slidemenu label{
-  width: 33%;
-  text-align: center;
-  display: block;
-  float: left;
-  color: #333;
-  opacity: 0.2;
-
+@keyframes fadeMeIn {
+  to {
+    opacity: 1;
+  }
 }
+/* prettify */
 
-.slidemenu label:hover{
-  cursor: pointer;
-  color: #666;
-}
-
-.slidemenu label span{
-  display: block;
-  padding: 10px;
-}
-
-.slidemenu label .icon{
-  font-size: 20px;
-  border: solid 2px #333;
-  text-align: center;
-  height: 50px;
-  width: 50px;
-  display: block;
-  margin: 0 auto;
-  line-height: 50px;
-  border-radius: 50%;
-}
-
-/*Bar Style*/
-
-.slider{
-  width: 100%;
-  height: 5px;
-  display: block;
-  background: #ccc;
-  margin-top: 10px;
-  border-radius: 5px;
-}
-
-.slider .bar{
-  width: 33%;
-  height: 5px;
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #333;
-  border-radius: 5px;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 100px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/*Animations*/
-.slidemenu label, .slider .bar {
-  transition: all 500ms ease-in-out;
-  -webkit-transition: all 500ms ease-in-out;
-  -moz-transition: all 500ms ease-in-out;
+.ns-ScrollWrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
-/*Toggle*/
-
-.slidemenu .slide-toggle:checked + label{
-  opacity: 1;
-}
-
-
-
-.slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
-.slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 33%; }
-.slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 66%; }
-.slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
+.ns-ScrollWrapper::-webkit-scrollbar {
+    display: none;
+    height: 0;
+    background-color: transparent;
+  }
