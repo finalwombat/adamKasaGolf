@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component} from 'react'
 import { withRouter } from 'react-router-dom'
 import './Menu.css'
 import logo from '../img/logo.jpg'
@@ -16,53 +16,56 @@ const logoImgStyle = {
   width: "20vw"
 }
 
-const Menu = (props) => {
-    return (
-      <section className="ns-TabsModule" data-active-tab="A">
-          <div className="ns-ScrollWrapper">
-            <nav className="ns-TabNav">
-              <a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="A"><span>Home</span></a>
-              <a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="B"><span>Schedule</span></a>
-              <a href="#ns-TabPanelC" className="ns-TabNav_Link" data-tab="C"><span>About</span></a>
-              <span className="ns-TabNav_Indicator"></span>
-            </nav>
-        </div>
-        <div className="ns-TabPanels">
-          <div className="ns-TabPanel" id="ns-TabPanelA" data-tab-panel="A">Panel A</div>
-          <div className="ns-TabPanel" id="ns-TabPanelB" data-tab-panel="B">Panel B</div>
-          <div className="ns-TabPanel" id="ns-TabPanelC" data-tab-panel="C">Panel C</div>
-        </div>
-      </section>
+class Menu extends Component {
+    render() {
+      return (
+        <section className="ns-TabsModule" data-active-tab="A">
+            <div className="ns-ScrollWrapper">
+              <nav className="ns-TabNav">
+                <a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="A"><span>Home</span></a>
+                <a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="B"><span>Schedule</span></a>
+                <a href="#ns-TabPanelC" className="ns-TabNav_Link" data-tab="C"><span>About</span></a>
+                <span className="ns-TabNav_Indicator"></span>
+              </nav>
+          </div>
+          <div className="ns-TabPanels">
+            <div className="ns-TabPanel" id="ns-TabPanelA" data-tab-panel="A">Panel A</div>
+            <div className="ns-TabPanel" id="ns-TabPanelB" data-tab-panel="B">Panel B</div>
+            <div className="ns-TabPanel" id="ns-TabPanelC" data-tab-panel="C">Panel C</div>
+          </div>
+        </section>
 
 
 
 
-      // <div className="menu" style={menuStyle}>
-      //   <div className="logo" style={logoStyle}>
-      //     <img src={logo} style={logoImgStyle} alt="logo"
-      //     onClick={() => {props.history.push('/')}} />
-      //   </div>
-      //   <nav className="slidemenu">
-      //     <input type="radio" name="slideItem" id="slide-item-1" className="slide-toggle"
-      //     onClick={() => {props.history.push('/')}} defaultChecked/>
-      //     <label htmlFor="slide-item-1"><p className="icon">♬</p><span>Home</span></label>
-      //     <input type="radio" name="slideItem" id="slide-item-2" className="slide-toggle"
-      //     onClick={() => {props.history.push('/schedule')}} />
-      //     <label htmlFor="slide-item-2" ><p className="icon">♬</p><span>Schedule</span></label>
-      //     <input type="radio" name="slideItem" id="slide-item-3" className="slide-toggle"
-      //     onClick={() => {props.history.push('/about')}} />
-      //     <label htmlFor="slide-item-3"><p className="icon">♬</p><span>About</span></label>
-      //
-      //     <div className="clear"></div>
-      //
-      //
-      //    <div className="slider">
-      //      <div className="bar"></div>
-      //    </div>
-      //   </nav>
-      // </div>
+        // <div className="menu" style={menuStyle}>
+        //   <div className="logo" style={logoStyle}>
+        //     <img src={logo} style={logoImgStyle} alt="logo"
+        //     onClick={() => {props.history.push('/')}} />
+        //   </div>
+        //   <nav className="slidemenu">
+        //     <input type="radio" name="slideItem" id="slide-item-1" className="slide-toggle"
+        //     onClick={() => {props.history.push('/')}} defaultChecked/>
+        //     <label htmlFor="slide-item-1"><p className="icon">♬</p><span>Home</span></label>
+        //     <input type="radio" name="slideItem" id="slide-item-2" className="slide-toggle"
+        //     onClick={() => {props.history.push('/schedule')}} />
+        //     <label htmlFor="slide-item-2" ><p className="icon">♬</p><span>Schedule</span></label>
+        //     <input type="radio" name="slideItem" id="slide-item-3" className="slide-toggle"
+        //     onClick={() => {props.history.push('/about')}} />
+        //     <label htmlFor="slide-item-3"><p className="icon">♬</p><span>About</span></label>
+        //
+        //     <div className="clear"></div>
+        //
+        //
+        //    <div className="slider">
+        //      <div className="bar"></div>
+        //    </div>
+        //   </nav>
+        // </div>
 
-    )
+      )
+    }
+
   }
 
 export default withRouter(Menu)
