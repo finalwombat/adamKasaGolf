@@ -24,6 +24,11 @@ class Menu extends Component {
       return (
         <section className="ns-TabsModule" data-active-tab="A">
             <div className="ns-ScrollWrapper">
+              <Link to="/">
+                <div className="logo" style={logoStyle}>
+                  <img src={logo} style={logoImgStyle} alt="logo" />
+                </div>
+              </Link>
               <nav className="ns-TabNav">
                 <Link to="/"><a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="A"><span>Home</span></a></Link>
                 <Link to="/schedule"><a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="B"><span>Schedule</span></a></Link>
@@ -32,9 +37,9 @@ class Menu extends Component {
               </nav>
           </div>
           <div className="ns-TabPanels">
-            <div className="ns-TabPanel" id="ns-TabPanelA" data-tab-panel="A">Panel A</div>
-            <div className="ns-TabPanel" id="ns-TabPanelB" data-tab-panel="B">Panel B</div>
-            <div className="ns-TabPanel" id="ns-TabPanelC" data-tab-panel="C">Panel C</div>
+            <div className="ns-TabPanel" id="ns-TabPanelA" data-tab-panel="A"></div>
+            <div className="ns-TabPanel" id="ns-TabPanelB" data-tab-panel="B"></div>
+            <div className="ns-TabPanel" id="ns-TabPanelC" data-tab-panel="C"></div>
           </div>
         </section>
 
