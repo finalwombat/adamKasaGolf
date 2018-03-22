@@ -1,5 +1,5 @@
 import React, { Component} from 'react'
-import { withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './Menu.css'
 import logo from '../img/logo.jpg'
 
@@ -17,14 +17,17 @@ const logoImgStyle = {
 }
 
 class Menu extends Component {
+    componentDidMount(){
+      tabs()
+    }
     render() {
       return (
         <section className="ns-TabsModule" data-active-tab="A">
             <div className="ns-ScrollWrapper">
               <nav className="ns-TabNav">
-                <a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="A"><span>Home</span></a>
-                <a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="B"><span>Schedule</span></a>
-                <a href="#ns-TabPanelC" className="ns-TabNav_Link" data-tab="C"><span>About</span></a>
+                <Link to="/"><a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="A"><span>Home</span></a></Link>
+                <Link to="/schedule"><a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="B"><span>Schedule</span></a></Link>
+                <Link to="about"><a href="#ns-TabPanelC" className="ns-TabNav_Link" data-tab="C"><span>About</span></a></Link>
                 <span className="ns-TabNav_Indicator"></span>
               </nav>
           </div>
@@ -68,7 +71,7 @@ class Menu extends Component {
 
   }
 
-export default withRouter(Menu)
+export default Menu
 
 
 function tabs() {
