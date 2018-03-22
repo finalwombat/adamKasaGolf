@@ -22,26 +22,28 @@ class Menu extends Component {
     }
     render() {
       return (
-        <section className="ns-TabsModule" data-active-tab="A">
-            <div className="ns-ScrollWrapper">
-              <Link to="/">
-                <div className="logo" style={logoStyle}>
-                  <img src={logo} style={logoImgStyle} alt="logo" />
-                </div>
-              </Link>
-              <nav className="ns-TabNav">
-                <Link to="/"><a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="A"><span>Home</span></a></Link>
-                <Link to="/schedule"><a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="B"><span>Schedule</span></a></Link>
-                <Link to="about"><a href="#ns-TabPanelC" className="ns-TabNav_Link" data-tab="C"><span>About</span></a></Link>
-                <span className="ns-TabNav_Indicator"></span>
-              </nav>
+        <div className="menu">
+          <div className="logo" style={logoStyle}>
+            <Link to="/">
+              <img src={logo} style={logoImgStyle} alt="logo" />
+            </Link>
           </div>
-          <div className="ns-TabPanels">
-            <div className="ns-TabPanel" id="ns-TabPanelA" data-tab-panel="A"></div>
-            <div className="ns-TabPanel" id="ns-TabPanelB" data-tab-panel="B"></div>
-            <div className="ns-TabPanel" id="ns-TabPanelC" data-tab-panel="C"></div>
-          </div>
-        </section>
+          <section className="ns-TabsModule" data-active-tab="A">
+              <div className="ns-ScrollWrapper">
+                <nav className="ns-TabNav">
+                  <Link to="/"><a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="A"><span>Home</span></a></Link>
+                  <Link to="/schedule"><a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="B"><span>Schedule</span></a></Link>
+                  <Link to="about"><a href="#ns-TabPanelC" className="ns-TabNav_Link" data-tab="C"><span>About</span></a></Link>
+                  <span className="ns-TabNav_Indicator"></span>
+                </nav>
+            </div>
+            <div className="ns-TabPanels">
+              <div className="ns-TabPanel" id="ns-TabPanelA" data-tab-panel="A"></div>
+              <div className="ns-TabPanel" id="ns-TabPanelB" data-tab-panel="B"></div>
+              <div className="ns-TabPanel" id="ns-TabPanelC" data-tab-panel="C"></div>
+            </div>
+          </section>
+        </div>
 
 
 
