@@ -72,7 +72,7 @@ body {
   background: #333;
   height: 100vh;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 20px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
