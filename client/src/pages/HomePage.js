@@ -9,7 +9,8 @@ const homeStyle = {
 
 const contentStyle = {
   display: 'flex',
-  justifyContent: 'space-around'
+  justifyContent: 'space-around',
+  paddingTop: '50px'
 }
 
 const HomePage = () => {
