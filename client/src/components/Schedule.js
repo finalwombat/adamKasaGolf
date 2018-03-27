@@ -7,10 +7,15 @@ export const Schedule = (props) => {
   })
   return (
       <div className="schedule">
-        <table className="scheduleTable">
-          <thead><th>Date</th> <th>Event</th> <th>POS</th> <th>Score</th></thead>
-          <tbody> { events }</tbody>
-        </table>
+        <div className="scheduleHead">
+          <h1>Tournament Schedule</h1>
+        </div>
+        <div className="tableWrapper">
+          <table className="scheduleTable">
+            <thead><th>Date</th> <th>Event</th> <th>POS</th> <th>Score</th></thead>
+            <tbody> { events }</tbody>
+          </table>
+        </div>
       </div>
   )
 }
