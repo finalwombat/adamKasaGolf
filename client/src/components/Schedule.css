@@ -5,6 +5,18 @@
   background: black;
   color: white;
 }
+
+.scheduleHead {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tableWrapper {
+  border: none;
+  border-top: 1px solid white;
+  padding-top: 50px;
+}
 .scheduleTable {
   width: 100%;
 }
