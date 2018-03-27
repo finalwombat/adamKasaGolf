@@ -8,7 +8,9 @@ const SchedulePage = () => {
     return (
       <div className="schedulePage">
         <Background img={backgroundImage}></Background>
-        <Schedule events={scheduleData.events}/>
+        <div className="content">
+            <Schedule events={scheduleData.events}/>
+        </div>
       </div>
     );
   }
