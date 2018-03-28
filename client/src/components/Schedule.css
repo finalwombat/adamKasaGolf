@@ -42,3 +42,23 @@ td {
 
 tr:nth-child(even) {background: black}
 tr:nth-child(odd) {background: grey}
+
+.tournRounds {
+  display: flex;
+  padding: none;
+}
+.round {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1px;
+  margin: 2px;
+}
+.roundNum {
+  color: black;
+  padding: 10px;
+}
+.roundScore {
+  background-color: black;
+  padding: 10px;
+}
