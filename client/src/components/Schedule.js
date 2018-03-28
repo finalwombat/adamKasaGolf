@@ -13,7 +13,7 @@ export const Schedule = (props) => {
   return (
       <div className="schedule">
         <div className="scheduleHead">
-          <h1>Tournament Schedule</h1>
+          <h2>Tournament Schedule</h2>
         </div>
         <div className="tableWrapper">
           <table className="scheduleTable">
