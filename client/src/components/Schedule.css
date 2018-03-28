@@ -1,9 +1,10 @@
 .schedule {
   position: absolute;
-  width: 70vw;
+
   height: 100vh;
-  background: black;
+  background: #222;
   color: white;
+  font-size: 1.5em;
 }
 
 .scheduleHead {
@@ -19,18 +20,21 @@
 }
 .scheduleTable {
   width: 100%;
+  border-spacing: 0px;
 }
 
 thead {
-  background: white;
-  color: black;
+  background: #f3f3f3;
+  color: #666;
   height: 20px;
 }
 
 th {
   height: 70px;
   text-align: left;
-  padding: 5px;
+  padding: 10px;
+  border: 1px solid #333;
+  font-size: 0.8em;
 }
 
 tr {
@@ -38,10 +42,12 @@ tr {
 }
 td {
   text-align: center;
+  padding: 5px;
+  padding-right: 10px;
 }
 
-tr:nth-child(even) {background: black}
-tr:nth-child(odd) {background: grey}
+tr:nth-child(even) {background: #222}
+tr:nth-child(odd) {background: #333}
 
 .tournRounds {
   display: flex;
@@ -53,6 +59,7 @@ tr:nth-child(odd) {background: grey}
   background-color: white;
   padding: 1px;
   margin: 2px;
+  font-size: 0.8em;
 }
 .roundNum {
   color: black;
