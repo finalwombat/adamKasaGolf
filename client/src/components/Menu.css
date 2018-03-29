@@ -1,17 +1,26 @@
 .menu {
   width: 100vw;
   display: flex;
-  padding-bottom: 20px;
+  justify-content: space-around;
   padding-top: 10px;
 }
 
 .logo {
-  padding: 0;
+  width: 20vw;
 }
 
+.logo img {
+  width: 100%;
+}
+
+.socialLinks {
+}
+
+.socialLinks img {
+  padding: 10px;
+}
 .ns-TabsModule {
   text-align: center;
-  padding-left: 25vw;
 }
 
 .ns-TabNav {
@@ -98,4 +107,4 @@ body {
     display: none;
     height: 0;
     background-color: transparent;
-  }
+}
