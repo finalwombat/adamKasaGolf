@@ -2,19 +2,10 @@ import React, { Component} from 'react'
 import { Link } from 'react-router-dom'
 import './Menu.css'
 import logo from '../img/logo2.png'
+import facebookImg from '../img/facebook.png'
+import instagramImg from '../img/instagram.png'
+import twitterImg from '../img/twitter.png'
 
-const menuStyle = {
-  display: "flex"
-}
-
-const logoStyle = {
-  "marginTop": "auto",
-  "marginBottom": "auto",
-  "marginLeft": "2vw"
-}
-const logoImgStyle = {
-  width: "20vw"
-}
 
 class Menu extends Component {
     componentDidMount(){
@@ -23,9 +14,9 @@ class Menu extends Component {
     render() {
       return (
         <div className="menu">
-          <div className="logo" style={logoStyle}>
+          <div className="logo">
             <Link to="/">
-              <img src={logo} style={logoImgStyle} alt="logo" />
+              <img src={logo} alt="logo" />
             </Link>
           </div>
           <section className="ns-TabsModule" data-active-tab="A">
@@ -43,6 +34,11 @@ class Menu extends Component {
               <div className="ns-TabPanel" id="ns-TabPanelC" data-tab-panel="C"></div>
             </div>
           </section>
+          <div className="socialLinks">
+            <img src={facebookImg} alt="facebook" />
+            <img src={instagramImg} alt="instagram" />
+            <img src={twitterImg} alt="twitter" />
+          </div>
         </div>
 
 
