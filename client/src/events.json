@@ -1,5 +1,12 @@
 {
-	"events": [{
+	"events": [
+		{
+			"date": "March 31, 2018",
+			"name": "Tamworth Easter Vardon Cup",
+			"result": "WIN",
+			"score": "69,73"
+		},
+		{
 			"date": "September 12, 2017",
 			"name": "Goald Coast Open, Southport GC, QLD",
 			"result": "t10",

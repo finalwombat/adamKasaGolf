@@ -16,7 +16,9 @@ class Menu extends Component {
         <div className="menu">
           <div className="logo">
             <Link to="/">
-              <img src={logo} alt="logo" />
+              <a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="A">
+                <img src={logo} alt="logo"/>
+              </a>
             </Link>
           </div>
           <section className="ns-TabsModule" data-active-tab="A">
