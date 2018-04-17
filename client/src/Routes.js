@@ -9,6 +9,7 @@ const Routes = (props) => {
     <div className='main'>
       <Route exact path="/" render={Home} />
       <Route path="/schedule" component={Schedule} />
+      <Route path="/partners" component={partners} />
       <Route path="/about" component={About} />
     </div>
   )

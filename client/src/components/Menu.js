@@ -25,8 +25,9 @@ class Menu extends Component {
               <div className="ns-ScrollWrapper">
                 <nav className="ns-TabNav">
                   <Link to="/"><a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="A"><span>Home</span></a></Link>
-                  <Link to="/schedule"><a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="B"><span>Schedule</span></a></Link>
-                  <Link to="about"><a href="#ns-TabPanelC" className="ns-TabNav_Link" data-tab="C"><span>About</span></a></Link>
+                  <Link to="/schedule"><a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="B"><span>Achievements</span></a></Link>
+                  <Link to="partners"><a href="#ns-TabPanelC" className="ns-TabNav_Link" data-tab="C"><span>Partners</span></a></Link>
+                  <Link to="about"><a href="#ns-TabPanelD" className="ns-TabNav_Link" data-tab="D"><span>About</span></a></Link>
                   <span className="ns-TabNav_Indicator"></span>
                 </nav>
             </div>
@@ -34,6 +35,7 @@ class Menu extends Component {
               <div className="ns-TabPanel" id="ns-TabPanelA" data-tab-panel="A"></div>
               <div className="ns-TabPanel" id="ns-TabPanelB" data-tab-panel="B"></div>
               <div className="ns-TabPanel" id="ns-TabPanelC" data-tab-panel="C"></div>
+              <div className="ns-TabPanel" id="ns-TabPanelD" data-tab-panel="D"></div>
             </div>
           </section>
           <div className="socialLinks">
