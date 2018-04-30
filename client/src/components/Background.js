@@ -1,16 +1,16 @@
 import React from 'react'
 
-
 const imgStyle = {
-  height: '140vh',
+  height: '100vh',
   width: '100vw',
   position: 'absolute'
 }
 
 const Background = (props) => {
+
   return (
     <div className="backgroundComponent">
-      <img src={props.img} style={imgStyle} alt="background" />
+      <img src={props.img} style={imgStyle} alt="background" /> 
     </div>
   )
 }
