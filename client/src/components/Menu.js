@@ -1,10 +1,11 @@
 import React, { Component} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import './Menu.css'
 import logo from '../img/logo2.png'
 import facebookImg from '../img/facebook.png'
 import instagramImg from '../img/instagram.png'
 import twitterImg from '../img/twitter.png'
+
 
 
 class Menu extends Component {
@@ -16,7 +17,7 @@ class Menu extends Component {
         <div className="menu">
           <div className="logo">
             <Link to="/">
-              <a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="A">
+              <a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="/">
                 <img src={logo} alt="logo"/>
               </a>
             </Link>
@@ -24,18 +25,18 @@ class Menu extends Component {
           <section className="ns-TabsModule" data-active-tab="A">
               <div className="ns-ScrollWrapper">
                 <nav className="ns-TabNav">
-                  <Link to="/"><a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="A"><span>Home</span></a></Link>
-                  <Link to="/schedule"><a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="B"><span>Achievements</span></a></Link>
-                  <Link to="partners"><a href="#ns-TabPanelC" className="ns-TabNav_Link" data-tab="C"><span>Partners</span></a></Link>
-                  <Link to="about"><a href="#ns-TabPanelD" className="ns-TabNav_Link" data-tab="D"><span>About</span></a></Link>
+                  <Link to="/"><a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="/"><span>Home</span></a></Link>
+                  <Link to="/schedule"><a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="/schedule"><span>Achievements</span></a></Link>
+                  <Link to="partners"><a href="#ns-TabPanelC" className="ns-TabNav_Link" data-tab="/partners"><span>Partners</span></a></Link>
+                  <Link to="about"><a href="#ns-TabPanelD" className="ns-TabNav_Link" data-tab="/about"><span>About</span></a></Link>
                   <span className="ns-TabNav_Indicator"></span>
                 </nav>
             </div>
             <div className="ns-TabPanels">
-              <div className="ns-TabPanel" id="ns-TabPanelA" data-tab-panel="A"></div>
-              <div className="ns-TabPanel" id="ns-TabPanelB" data-tab-panel="B"></div>
-              <div className="ns-TabPanel" id="ns-TabPanelC" data-tab-panel="C"></div>
-              <div className="ns-TabPanel" id="ns-TabPanelD" data-tab-panel="D"></div>
+              <div className="ns-TabPanel" id="ns-TabPanelA" data-tab-panel="/"></div>
+              <div className="ns-TabPanel" id="ns-TabPanelB" data-tab-panel="/schedule"></div>
+              <div className="ns-TabPanel" id="ns-TabPanelC" data-tab-panel="/partners"></div>
+              <div className="ns-TabPanel" id="ns-TabPanelD" data-tab-panel="/about"></div>
             </div>
           </section>
           <div className="socialLinks">
@@ -87,6 +88,8 @@ function tabs() {
 
     //get tabs module parent
     var tabsModule = document.body.querySelector(".ns-TabsModule");
+    //Set active tab to current url
+    tabsModule.setAttribute("data-active-tab", window.location.pathname)
     //get tab nav
     var tabNavList = document.body.querySelector(".ns-TabNav");
     //get all tab nav links
@@ -106,7 +109,7 @@ function tabs() {
       //get left position of tab nav ul
       var tabNavListLeftPosition = tabNavList.getBoundingClientRect().left;
       //get tab module parent current data value
-      var tabsModuleSectionDataValue = tabsModule.getAttribute("data-active-tab") || "A";
+      var tabsModuleSectionDataValue = tabsModule.getAttribute("data-active-tab") || "/";
       //get nav link span with data value that matches current tab module parent data value
       var tabNavCurrentLinkText = tabNavList.querySelector("[data-tab='" + tabsModuleSectionDataValue + "'] span");
       //get dimensions of current nav link span
