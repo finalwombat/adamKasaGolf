@@ -1,5 +1,6 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+const path = require('path')
 
 app.set('port', (process.env.PORT || 80));
 
