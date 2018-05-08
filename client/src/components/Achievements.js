@@ -1,38 +1,46 @@
 import React from 'react'
-import './Schedule.css'
+import styled from 'styled-components'
+import tamworthWin from '../img/tamworthWin.jpg'
 
-export const Achievements = (props) => {
-  const events = props.events.map(event => {
-    return <tr>
-            <td>{event.date}</td>
-            <td>{event.name}</td>
-            <td>{event.result}</td>
-            <td><ul className="tournRounds">{scorecard(event.score)}</ul></td>
-          </tr>
+const AchievementDiv = styled.div`
+                      width: 80vw;
+                      height: 90vh;
+                      display: flex;
+                      color: white;
+
+                      & img {
+                        position: relative;
+                      }
+                      
+                      & div {
+                        width: 30%;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        margin: 30px;
+                      }
+`
+
+
+const Achievements = (props) => {
+  const Achievements = props.achievements.map( achievement => {
+    return (
+      <AchievementDiv>
+        <img src={tamworthWin} style={{height: '100%', width: '60%'}}/>
+        <div>
+          <h2>{achievement.date}</h2>
+          <h1>{achievement.title}</h1>
+          <a href={achievement.link}>Read</a>
+        </div>
+        
+      </AchievementDiv>
+    )
   })
   return (
-      <div className="schedule">
-        <div className="scheduleHead">
-          <h2>Achievements</h2>
-        </div>
-        <div className="tableWrapper">
-          <table className="scheduleTable">
-            <thead><th>Date</th> <th>Event</th> <th>POS</th> <th>Score</th></thead>
-            <tbody> { events }</tbody>
-          </table>
-        </div>
+      <div className="achievements">
+        {Achievements}
       </div>
   )
 }
 
-
-const scorecard = (score) => {
-    const scores = score.split(',')
-    return scores.map((score, index) => {
-      console.log(index, score)
-      return <li className='round'>
-              <span className="roundNum">R{index + 1}</span>
-              <span className="roundScore">{score}</span>
-            </li>
-    })
-}
+export default Achievements
