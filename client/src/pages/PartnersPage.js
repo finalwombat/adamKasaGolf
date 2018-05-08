@@ -7,61 +7,73 @@ import vp from '../img/vicpark.jpg'
 import golfinfo from '../img/golfinfonetwork.png'
 
 const Container = styled.div`
-                  position: relative;`
-
-const Image = styled.img`
-                opacity: 1;
-                height: auto;
-                transition: .5s ease;
-                backface-visibility: hidden;
-                
-                &:hover {
-                  opacity: 0.3;
-                }
-                `
-const Overlay = styled.div`
-                  transition: .5s ease;
-                  opacity: 0;
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  -ms-transform: translate(-50%, -50%);
-                  text-align: center;
-
-                  &:hover {
+                  position: relative;
+                  
+                  & .image {
                     opacity: 1;
-                  }`
+                    height: auto;
+                    transition: .5s ease;
+                    backface-visibility: hidden;
+                  }
+                  
+                  & .overlay {
+                    transition: .5s ease;
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    text-align: center;
+                  }
 
-const Text = styled.p`
-              color: white;
-              font-size: 16px;
-              padding: 16px 32px;
-`
+                  &:hover .image {
+                    opacity: 0.3;
+                  }
+
+                  &:hover .overlay {
+                    opacity: 1;
+                  }
+
+                  & .text {
+                    color: white;
+                    font-size: 16px;
+                    padding: 16px 32px;
+                  }
+                  `
+
+
 
 const PartnersPage = () => {
     return (
       <div className="partners">
         <Container>
           <a href="https://victoriapark.com.au/">
-            <Image src={vp} />
-            <Overlay className='overlay'>
-              <Text>Victoria Park Golf Complex</Text>
-            </Overlay>
+          <img className="image" src={vp} />
+            <div className='overlay'>
+              <div className="text">Victoria Park Golf Complex</div>
+            </div>
           </a>
+        </Container>
+        <Container>
         <a href="http://www.thegolfathlete.com/">
-          <Image src={tga} />
-            <Overlay className='overlay'>
-              <Text>The Golf Athlete</Text>
-            </Overlay>
+          <img className="image" src={tga} />
+            <div className='overlay'>
+              <div className="text">The Golf Athlete</div>
+            </div>
           </a>
+        </Container>
+        <Container>
         <a href="http://www.golfinfonetwork.com/">
-          <Image src={golfinfo} />
-            <Overlay>
-              <Text>Golf Info Network</Text>
-            </Overlay>
+          <img className="image" src={golfinfo} />
+            <div className='overlay'>
+              <div className="text">Golf Info Network</div>
+            </div>
          </a>
         </Container>
+          
+          
+          
       </div>
     );
   }
