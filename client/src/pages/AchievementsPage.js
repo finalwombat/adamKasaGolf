@@ -4,9 +4,9 @@ import backgroundImage from '../img/481.jpg'
 import Achievements  from '../components/Achievements'
 import achievementsData from '../achievements.json'
 
-const SchedulePage = () => {
+const AchievementsPage = () => {
     return (
-      <div className="schedulePage">
+      <div className="achievementsPage">
         <div className="content">
             <Achievements achievements={achievementsData.achievements}/>
         </div>
@@ -14,4 +14,4 @@ const SchedulePage = () => {
     );
   }
 
-export default SchedulePage
+export default AchievementsPage

@@ -26,7 +26,7 @@ class Menu extends Component {
               <div className="ns-ScrollWrapper">
                 <nav className="ns-TabNav">
                   <Link to="/"><a href="#ns-TabPanelA" className="ns-TabNav_Link" data-tab="/"><span>Home</span></a></Link>
-                  <Link to="/schedule"><a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="/schedule"><span>Achievements</span></a></Link>
+                  <Link to="/achievements"><a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="/achievements"><span>Achievements</span></a></Link>
                   <Link to="partners"><a href="#ns-TabPanelC" className="ns-TabNav_Link" data-tab="/partners"><span>Partners</span></a></Link>
                   <Link to="about"><a href="#ns-TabPanelD" className="ns-TabNav_Link" data-tab="/about"><span>About</span></a></Link>
                   <span className="ns-TabNav_Indicator"></span>
@@ -34,7 +34,7 @@ class Menu extends Component {
             </div>
             <div className="ns-TabPanels">
               <div className="ns-TabPanel" id="ns-TabPanelA" data-tab-panel="/"></div>
-              <div className="ns-TabPanel" id="ns-TabPanelB" data-tab-panel="/schedule"></div>
+              <div className="ns-TabPanel" id="ns-TabPanelB" data-tab-panel="/achievements"></div>
               <div className="ns-TabPanel" id="ns-TabPanelC" data-tab-panel="/partners"></div>
               <div className="ns-TabPanel" id="ns-TabPanelD" data-tab-panel="/about"></div>
             </div>

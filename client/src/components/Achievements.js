@@ -21,10 +21,15 @@ const AchievementDiv = styled.div`
 
                       & a {
                         text-decoration: none;
-                        background: blue;
-                        padding: 8px;
+                        background: #4286f4;
+                        padding: 3px 8px 3px 8px;
                         color: black;
                         font-size: 1.3em;
+                        transition: .5s ease;
+                      }
+
+                      & a:hover {
+                        background: #2763c4;
                       }
 `
 
