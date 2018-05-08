@@ -40,9 +40,9 @@ class Menu extends Component {
             </div>
           </section>
           <div className="socialLinks">
-            <img src={facebookImg} alt="facebook" />
-            <img src={instagramImg} alt="instagram" />
-            <img src={twitterImg} alt="twitter" />
+            <a href="https://www.facebook.com/adamkasagolf/"><img src={facebookImg} alt="facebook" /></a>
+            <a href="https://www.instagram.com/adamkgolfer/" ><img src={instagramImg} alt="instagram" /></a>
+            <a href="https://twitter.com/AdamKGolfer" ><img src={twitterImg} alt="twitter" /></a> 
           </div>
         </div>
 
