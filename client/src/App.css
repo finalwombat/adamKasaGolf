@@ -70,3 +70,22 @@ body {
   width: 300px;
   margin: auto;
 }
+
+@media only screen and (max-width: 599px) {
+  #about-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about #bio {
+    width: 100%;
+  }
+
+  .about #clubs {
+    width: 100%;
+    text-align: center;
+  }
+}
