@@ -2,6 +2,31 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import menuButton from '../img/menu.png'
+
+
+const MenuMobile = () => {
+    return (
+      <Menu className="menuMobile">
+        <input type="checkbox" id="menu" />
+        <label for="menu"></label>
+        <div className="menuContent">
+            <ul onClick={closeMenu}>
+                <Link to="/">Home</Link>
+                <Link to="/achievements">Achievements</Link>
+                <Link to="/partners">Partners</Link>
+                <Link to="/about">About</Link>
+            </ul>
+        </div>
+      </Menu>
+    );
+  }
+
+export default MenuMobile
+
+const closeMenu = function(event) {
+    document.getElementById("menu").checked = false;
+}
+
 const Menu = styled.div`
             width: 30vw;
             position: absolute;
@@ -34,8 +59,8 @@ const Menu = styled.div`
             
             & label {
                 color: white;
-                background: url(${menuButton}) no-repeat left center;
-                width: 100%;
+                background: url(${menuButton}) no-repeat center;
+                
                 height: 100%;
                 padding: 10px 0 10px 50px;
             }
@@ -50,22 +75,3 @@ const Menu = styled.div`
                 padding-right: 50px;
             }
             `
-
-const MenuMobile = () => {
-    return (
-      <Menu className="menuMobile">
-        <input type="checkbox" id="menu" />
-        <label for="menu"></label>
-        <div className="menuContent">
-            <ul>
-                <Link to="/">Home</Link>
-                <Link to="/achievements">Achievements</Link>
-                <Link to="/partners">Partners</Link>
-                <Link to="/about">About</Link>
-            </ul>
-        </div>
-      </Menu>
-    );
-  }
-
-export default MenuMobile
