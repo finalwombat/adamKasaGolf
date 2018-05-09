@@ -8,7 +8,6 @@ const AchievementDiv = styled.div`
                       display: flex;
                       color: white;
 
-
                       & img {
   
                       }
@@ -30,6 +29,18 @@ const AchievementDiv = styled.div`
 
                       & a:hover {
                         background: #2763c4;
+                      }
+
+                      @media only screen and (max-width: 599px) {
+                        flex-direction: column;
+                        height: 100%;
+                        align-items: center;
+                        
+                        & div {
+                          margin: 10px;
+                          width: 100%;
+                          text-align: center;
+                        }
                       }
 `
 

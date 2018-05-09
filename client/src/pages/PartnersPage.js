@@ -6,6 +6,13 @@ import tga from '../img/thegolfathlete.jpg'
 import vp from '../img/vicpark.jpg'
 import golfinfo from '../img/golfinfonetwork.png'
 
+
+const Partners = styled.div`
+                  @media only screen and (max-width: 599px) {
+                        flex-direction: column;
+                        text-align: center;
+                      }
+                  `
 const Container = styled.div`
                   position: relative;
                   
@@ -46,7 +53,7 @@ const Container = styled.div`
 
 const PartnersPage = () => {
     return (
-      <div className="partners">
+      <Partners className="partners">
         <Container>
           <a href="https://victoriapark.com.au/">
           <img className="image" src={vp} />
@@ -74,7 +81,7 @@ const PartnersPage = () => {
           
           
           
-      </div>
+      </Partners>
     );
   }
 
