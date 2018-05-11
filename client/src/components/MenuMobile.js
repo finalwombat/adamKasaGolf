@@ -44,7 +44,6 @@ const Menu = styled.div`
             &.open .menuContent {
                 max-height: 100%;
                 width: 100%;
-                padding-right: 50px;
             }
 
             &.open label {
@@ -68,10 +67,12 @@ const Menu = styled.div`
             }
 
             & a {
+                width: 100%;
                 color: #4286f4;
                 display:block;
                 padding: 10px;
                 text-decoration: none;
+                border: px solid black;
             }
             
             & label {
