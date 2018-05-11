@@ -38,7 +38,7 @@ const Menu = styled.div`
              
             &.open {
                 height: 200px;
-                background-color: black;
+                background-color: rgba(0,0,0,0.7);
             }
             
             &.open .menuContent {
@@ -54,7 +54,6 @@ const Menu = styled.div`
 
             & .menuContent {
                 font-family: 'Oswald', sans-serif;
-                background-color: black;
                 width: 100vw;
                 box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
                 max-height: 0;
