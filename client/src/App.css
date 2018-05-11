@@ -4,7 +4,9 @@
 body {
     overflow-y: scroll;
     width: 100vw;
+    margin: 0;
 }
+
 /* schedule page*/
 
 .schedulePage {
