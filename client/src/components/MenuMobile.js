@@ -34,6 +34,7 @@ const Menu = styled.div`
             z-index: 1;
             padding-top: 10px;
             position: absolute;
+            transition: 0.2s ease-in;
              
             &.open {
                 height: 200px;
