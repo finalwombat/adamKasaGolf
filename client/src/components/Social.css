@@ -4,6 +4,7 @@
   align-content: center;
   padding: 10px;
   padding-top: 0px;
+  text-align: center;
 }
 
 .topText {
@@ -19,8 +20,9 @@ h2 {
 }
 
 .banner {
+  align-self: center;
   margin-bottom: 20px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 .socialimages {
   position: relative;
