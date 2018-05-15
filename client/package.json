@@ -23,7 +23,7 @@
     "react-test-renderer": "^16.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=80 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "test:watch": "jest --watch",
