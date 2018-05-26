@@ -5,9 +5,19 @@ import backgroundImage from '../img/clubs.jpg'
 import tga from '../img/thegolfathlete.jpg'
 import vp from '../img/vicpark.jpg'
 import golfinfo from '../img/golfinfonetwork.png'
+import ptgc from '../img/ptgc.png'
+import eg from '../img/eg.jpeg'
 
 
 const Partners = styled.div`
+                  display: flex;
+                  justify-content: center;
+                  flex-wrap: wrap;
+
+                  & img {
+                    margin: 40px;
+                  }
+                  
                   @media only screen and (max-width: 599px) {
                         flex-direction: column;
                         text-align: center;
@@ -15,7 +25,7 @@ const Partners = styled.div`
                   `
 const Container = styled.div`
                   position: relative;
-                  
+
                   & .image {
                     opacity: 1;
                     height: auto;
@@ -47,6 +57,18 @@ const Container = styled.div`
                     font-size: 16px;
                     padding: 16px 32px;
                   }
+
+                  @media only screen and (max-width: 599px) {
+
+                        & .image {
+                          width: 60%;
+                        }
+
+                        & .overlay {
+                          width: 60%;
+                          height: inherit;
+                        } 
+                      }
                   `
 
 
@@ -75,6 +97,22 @@ const PartnersPage = () => {
           <img className="image" src={golfinfo} />
             <div className='overlay'>
               <div className="text">Golf Info Network</div>
+            </div>
+         </a>
+        </Container>
+        <Container>
+        <a href="http://www.protourgolfcollege.com/">
+          <img className="image" src={ptgc} />
+            <div className='overlay'>
+              <div className="text">Pro Tour Golf College</div>
+            </div>
+         </a>
+        </Container>
+        <Container>
+        <a href="http://www.empowergolf.com.au/">
+          <img className="image" src={eg} />
+            <div className='overlay'>
+              <div className="text">Empower Golf Australia</div>
             </div>
          </a>
         </Container>
