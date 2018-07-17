@@ -1,6 +1,6 @@
 import React from 'react'
 import Background from '../components/Background'
-import backgroundImage from '../img/golfshot.jpg'
+import backgroundImage from '../img/adam_swing.jpeg'
 import FacebookFeed from '../components/FacebookFeed'
 import Social from '../components/Social'
 import styled from 'styled-components'
