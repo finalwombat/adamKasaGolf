@@ -1,6 +1,6 @@
 import React from 'react'
 import Background from '../components/Background'
-import backgroundImage from '../img/clubs.jpg'
+import backgroundImage from '../img/bag.png'
 import driver from '../img/driver.jpg'
 import fairway from '../img/fairway.jpg'
 import iron from '../img/iron.jpg'
