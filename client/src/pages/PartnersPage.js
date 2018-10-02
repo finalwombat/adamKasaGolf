@@ -7,6 +7,7 @@ import vp from '../img/vicpark.jpg'
 import golfinfo from '../img/golfinfonetwork.png'
 import ptgc from '../img/ptgc.png'
 import eg from '../img/eg.jpeg'
+import crest from '../img/logoCrest.png'
 
 
 const Partners = styled.div`
@@ -76,6 +77,14 @@ const Container = styled.div`
 const PartnersPage = () => {
     return (
       <Partners className="partners">
+        <Container>
+          <a href="https://crestlink.com.au/">
+          <img className="image" src={crest} />
+            <div className='overlay'>
+              <div className="text">Crest Link Golf Apparel</div>
+            </div>
+          </a>
+        </Container>
         <Container>
           <a href="https://victoriapark.com.au/">
           <img className="image" src={vp} />
