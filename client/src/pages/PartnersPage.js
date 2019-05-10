@@ -1,13 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Background from '../components/Background'
-import backgroundImage from '../img/clubs.jpg'
-import tga from '../img/thegolfathlete.jpg'
-import vp from '../img/vicpark.jpg'
-import golfinfo from '../img/golfinfonetwork.png'
+import tga from '../img/golfAthlete.png'
 import ptgc from '../img/ptgc.png'
 import eg from '../img/eg.jpeg'
 import crest from '../img/logoCrest.png'
+import tc from '../img/theclub.png'
 
 
 const Partners = styled.div`
@@ -86,10 +83,10 @@ const PartnersPage = () => {
           </a>
         </Container>
         <Container>
-          <a href="https://victoriapark.com.au/">
-          <img className="image" src={vp} />
+          <a href="http://www.theclubparkwood.com.au/">
+          <img className="image" src={tc} />
             <div className='overlay'>
-              <div className="text">Victoria Park Golf Complex</div>
+              <div className="text">The Club @ Parkwood Village</div>
             </div>
           </a>
         </Container>
@@ -100,14 +97,6 @@ const PartnersPage = () => {
               <div className="text">The Golf Athlete</div>
             </div>
           </a>
-        </Container>
-        <Container>
-        <a href="http://www.golfinfonetwork.com/">
-          <img className="image" src={golfinfo} />
-            <div className='overlay'>
-              <div className="text">Golf Info Network</div>
-            </div>
-         </a>
         </Container>
         <Container>
         <a href="http://www.protourgolfcollege.com/">

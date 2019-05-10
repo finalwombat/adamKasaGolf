@@ -1,8 +1,8 @@
 import React from 'react'
 import Background from '../components/Background'
 import backgroundImage from '../img/bag.png'
-import driver from '../img/driver.jpg'
-import fairway from '../img/fairway.jpg'
+import driver from '../img/driver.png'
+import fairway from '../img/fairway.png'
 import iron from '../img/iron.jpg'
 import wedge from '../img/wedge.jpg'
 import putter from '../img/putter.jpg'
@@ -16,7 +16,7 @@ const AboutPage = () => {
           <div id="clubs">
             <p>In the bag -</p>
             <p>Driver: TaylorMade M1, X-Flex, 11°</p> <img src={driver} />
-            <p>FW: TaylorMade M1, X-Flex, 15° & 19°</p> <img src={fairway} />
+            <p>FW: TaylorMade M1, X-Flex, 15° & 19°</p> <img src={fairway} width="80px" height="80px"/>
             <p>Irons: Mizuno MP64, S300 Shafts, 4-PW</p> <img src={iron} />
             <p>Wedges : Mizuno TP5, S300 Shafts, 50°,54° & 58°</p> <img src={wedge} />
             <p>Putter: Odyssey Works #1 </p> <img src={putter} />
