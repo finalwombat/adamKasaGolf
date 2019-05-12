@@ -5,15 +5,18 @@ import ptgc from '../img/ptgc.png'
 import eg from '../img/eg.jpeg'
 import crest from '../img/logoCrest.png'
 import tc from '../img/theclub.png'
+import bg from '../img/boltgolf.png'
 
 
 const Partners = styled.div`
                   display: flex;
                   justify-content: center;
+                  align-items: center;
                   flex-wrap: wrap;
 
                   & img {
                     margin: 40px;
+                    max-width: 450px;
                   }
                   
                   @media only screen and (max-width: 599px) {
@@ -95,6 +98,14 @@ const PartnersPage = () => {
           <img className="image" src={tga} />
             <div className='overlay'>
               <div className="text">The Golf Athlete</div>
+            </div>
+          </a>
+        </Container>
+        <Container>
+        <a href="http://www.boltgolf.com.au/">
+          <img className="image" src={bg} />
+            <div className='overlay'>
+              <div className="text">Bolt Golf</div>
             </div>
           </a>
         </Container>
