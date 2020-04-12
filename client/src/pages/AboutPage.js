@@ -1,12 +1,12 @@
 import React from 'react'
 import Background from '../components/Background'
-import backgroundImage from '../img/bag.png'
+import backgroundImage from '../img/rough.jpg'
 import driver from '../img/driver.png'
 import fairway from '../img/fairway.png'
 import iron from '../img/iron.jpg'
 import wedge from '../img/wedge.jpg'
 import putter from '../img/putter.jpg'
-import kasa from '../img/kasa.jpg'
+import kasa from '../img/suckstobethefan.png'
 
 const AboutPage = () => {
     return (
@@ -29,7 +29,7 @@ const AboutPage = () => {
             <p>DOB: 25th June 1984</p>
             <p>Birthplace: Zalaegerszeg, Hungary</p>
             </p>
-            <img src={kasa} />
+            <img src={kasa} height="100%" width="100%"/>
           </div>
           
         </div>

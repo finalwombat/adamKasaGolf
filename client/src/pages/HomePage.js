@@ -1,6 +1,6 @@
 import React from 'react'
 import Background from '../components/Background'
-import backgroundImage from '../img/adam_swing.jpeg'
+import backgroundImage from '../img/new.jpg'
 import FacebookFeed from '../components/FacebookFeed'
 import Social from '../components/Social'
 import styled from 'styled-components'
@@ -11,6 +11,7 @@ const Content = styled.div`
                     display: flex;
                     justify-content: space-around;
                     padding-top: 50px;
+                    margin-right: 30%;
                 
                 @media only screen and (max-width: 599px){
                   flex-direction: column-reverse;
@@ -19,6 +20,7 @@ const Content = styled.div`
                   align-content: center;
 
                   & div {
+                    margin-rigth: 0;
                     margin-top: 20px;
                     margin-bottom: 30px;
                   }

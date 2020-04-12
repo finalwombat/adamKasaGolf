@@ -2,10 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import tga from '../img/golfAthlete.png'
 import ptgc from '../img/ptgc.png'
-import eg from '../img/eg.jpeg'
 import crest from '../img/logoCrest.png'
-import tc from '../img/theclub.png'
-import bg from '../img/boltgolf.png'
+import buca from '../img/buca.jpg'
 
 
 const Partners = styled.div`
@@ -26,6 +24,7 @@ const Partners = styled.div`
                   `
 const Container = styled.div`
                   position: relative;
+                  text-align: center;
 
                   & .image {
                     opacity: 1;
@@ -79,19 +78,19 @@ const PartnersPage = () => {
       <Partners className="partners">
         <Container>
           <a href="https://crestlink.com.au/">
-          <img className="image" src={crest} />
+          <img className="image" src={crest}/>
             <div className='overlay'>
               <div className="text">Crest Link Golf Apparel</div>
             </div>
           </a>
         </Container>
         <Container>
-          <a href="http://www.theclubparkwood.com.au/">
-          <img className="image" src={tc} />
+        <a href="http://www.bucabelts.com/">
+          <img className="image" src={buca} height="26%" width="60%"/>
             <div className='overlay'>
-              <div className="text">The Club @ Parkwood Village</div>
+              <div className="text">Buca Belts</div>
             </div>
-          </a>
+         </a>
         </Container>
         <Container>
         <a href="http://www.thegolfathlete.com/">
@@ -102,26 +101,10 @@ const PartnersPage = () => {
           </a>
         </Container>
         <Container>
-        <a href="http://www.boltgolf.com.au/">
-          <img className="image" src={bg} />
-            <div className='overlay'>
-              <div className="text">Bolt Golf</div>
-            </div>
-          </a>
-        </Container>
-        <Container>
         <a href="http://www.protourgolfcollege.com/">
           <img className="image" src={ptgc} />
             <div className='overlay'>
               <div className="text">Pro Tour Golf College</div>
-            </div>
-         </a>
-        </Container>
-        <Container>
-        <a href="http://www.empowergolf.com.au/">
-          <img className="image" src={eg} />
-            <div className='overlay'>
-              <div className="text">Empower Golf Australia</div>
             </div>
          </a>
         </Container>
