@@ -29,6 +29,7 @@ class Menu extends Component {
                   <Link to="/achievements"><a href="#ns-TabPanelB" className="ns-TabNav_Link" data-tab="/achievements"><span>Achievements</span></a></Link>
                   <Link to="partners"><a href="#ns-TabPanelC" className="ns-TabNav_Link" data-tab="/partners"><span>Partners</span></a></Link>
                   <Link to="about"><a href="#ns-TabPanelD" className="ns-TabNav_Link" data-tab="/about"><span>About</span></a></Link>
+                  <Link to="shop"><a href="#ns-TabPanelD" className="ns-TabNav_Link" data-tab="/shop"><span>Shop</span></a></Link>
                   <span className="ns-TabNav_Indicator"></span>
                 </nav>
             </div>
@@ -37,6 +38,7 @@ class Menu extends Component {
               <div className="ns-TabPanel" id="ns-TabPanelB" data-tab-panel="/achievements"></div>
               <div className="ns-TabPanel" id="ns-TabPanelC" data-tab-panel="/partners"></div>
               <div className="ns-TabPanel" id="ns-TabPanelD" data-tab-panel="/about"></div>
+              <div className="ns-TabPanel" id="ns-TabPanelD" data-tab-panel="/shop"></div>
             </div>
           </section>
           <div className="socialLinks">

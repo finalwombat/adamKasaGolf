@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage'
 import SchedulePage from './pages/AchievementsPage'
 import PartnersPage from './pages/PartnersPage'
 import AboutPage from './pages/AboutPage'
+import ShopPage from './pages/Shop'
 import PageShell from './components/PageShell'
 import './App.css'
 import AchievementsPage from './pages/AchievementsPage.js';
@@ -28,6 +29,7 @@ class App extends Component {
           <Route path="/achievements" exact component={PageShell(AchievementsPage)}></Route>
           <Route path="/partners" exact component={PageShell(PartnersPage)}></Route>
           <Route path="/about" exact component={PageShell(AboutPage)}></Route>
+          <Route path="/shop" exact component={PageShell(ShopPage)}></Route>
         </div>
     );
   }

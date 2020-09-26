@@ -1,0 +1,45 @@
+.shop-items {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.item {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 300px;
+  width: 255px;
+}
+.item img{
+  width: 250px;
+  height: 250px;
+}
+.item-text{
+  margin-left: 5px;
+  font-weight: bold;
+}
+.bottomSection {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+  margin-top: 100px;
+}
+.contactButton {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ed3330;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  }
+  .contactButton:hover {
+    background: #434343;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    }
