@@ -15,6 +15,7 @@ const MenuMobile = () => {
                 <Link to="/achievements">Achievements</Link>
                 <Link to="/partners">Partners</Link>
                 <Link to="/about">About</Link>
+                <Link to="shop">Shop</Link>
             </ul>
         </div>
       </Menu>
@@ -37,7 +38,7 @@ const Menu = styled.div`
             transition: 0.2s ease-in;
              
             &.open {
-                height: 200px;
+                height: 250px;
                 background-color: rgba(0,0,0,0.7);
             }
             

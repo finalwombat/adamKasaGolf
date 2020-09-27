@@ -2,6 +2,8 @@ import React from 'react'
 import Balls from '../img/akBalls.jpg'
 import Shirt from '../img/akTshirt.jpg'
 import Tees from '../img/akTee.jpg'
+import Mask from '../img/mask.jpg'
+
 import './Shop.css'
 
 const Shop = () => {
@@ -25,6 +27,12 @@ const Shop = () => {
               <img src={Tees} />
               <div class="item-text">
                 AK Golf Logo Golf Tees - 25 Pack. $15.
+              </div>
+            </div>
+            <div class="item">
+              <img src={Mask} />
+              <div class="item-text">
+                AK Golf Logo 100% Cotton Washable Mask- Black - Size M (21x12cm) & F/Y (19x11cm) $15
               </div>
             </div>
           </div>

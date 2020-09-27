@@ -1,14 +1,16 @@
 .shop-items {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 100px;
 }
 .item {
   background-color: white;
   border: 2px solid white;
   border-radius: 5px;
-  height: 300px;
+  height: 320px;
   width: 255px;
+  margin-bottom: 10px;
 }
 .item img{
   width: 250px;
